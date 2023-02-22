@@ -1,0 +1,21 @@
+.topHeader{
+    background-color:var(--primaryColor);
+    color: white;
+    padding: 10px 0;
+}
+/* *TOP HEADER TEXT AREA*/
+.topHeader .topHeaderMenu li{
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 14px;
+}
+
+
+/* *LOGIN BUTTON DESIGN */
+.topHeader .loginBtn{
+    color: white;
+    transition: 0.325s ease;
+}
+.topHeader a:hover{
+    color: var(--secondaryColor);
+}

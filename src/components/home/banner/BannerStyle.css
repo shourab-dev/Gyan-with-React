@@ -1,0 +1,24 @@
+#banner{
+    height: 650px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+#banner .bannerCnt{
+    color: white;
+}
+
+#banner .bannerCnt h2{
+    font-size: 40px;
+    font-weight: 400;
+}
+#banner .bannerCnt h3{
+    font-size: 52px;
+}
+
+#banner .bannerCnt p {
+    margin: 25px 0;
+    font-size: 14px;
+
+}

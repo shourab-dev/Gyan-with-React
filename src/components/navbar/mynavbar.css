@@ -1,0 +1,28 @@
+/* *MY CUSTOM NAVBAR */
+#myCustomNav  a{
+    color: var(--primaryColor);
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-top: 10px;
+
+}
+#myCustomNav  a:hover{
+    color: var(--secondaryColor);
+}
+.MyNavBar{
+    background-color: #fff;
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.MyNavBar .myNavToggler{
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: var(--primaryColor);
+    transition: 0.35s ease;
+}
+.MyNavBar .myNavToggler:focus{
+    background-color: var(--secondaryColor);
+    color: white;
+}
+
