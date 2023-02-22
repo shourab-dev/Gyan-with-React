@@ -1,67 +1,80 @@
-#banner{
-    height: 650px;
-    background-size: cover;
-    background-position: center;
-    position: relative;
+#banner {
+  height: 650px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
-
-#banner .bannerCnt{
-    color: white;
+#banner .bannerCnt {
+  color: white;
 }
 
-#banner .bannerCnt h2{
-    font-size: 40px;
-    font-weight: 400;
+#banner .bannerCnt h2 {
+  font-size: 40px;
+  font-weight: 400;
 }
-#banner .bannerCnt h3{
-    font-size: 52px;
+#banner .bannerCnt h3 {
+  font-size: 52px;
 }
 
 #banner .bannerCnt p {
-    margin: 25px 0;
-    font-size: 14px;
-
+  margin: 25px 0;
+  font-size: 14px;
 }
 
-
-
+/* * BANNER ARROWS */
 #banner .image-swiper-button-prev,
-#banner .image-swiper-button-next{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    border: 1px solid white;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    color: white;
-    text-align: center;
-    line-height: 46px;
-    transition: 0.35s ease;
-    opacity: 1;
-    visibility: visible;
-    
+#banner .image-swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+  visibility: visible;
 }
-
 
 #banner .image-swiper-button-prev[disabled],
-#banner .image-swiper-button-next[disabled]{
-    opacity: 0;
-    visibility: hidden;
+#banner .image-swiper-button-next[disabled] {
+  opacity: 0;
+  visibility: hidden;
 }
-
 
 #banner .image-swiper-button-prev:hover,
-#banner .image-swiper-button-next:hover{
-    background-color: var(--secondaryColor);
-    border-color: var(--secondaryColor);
-    
+#banner .image-swiper-button-next:hover {
+  background-color: var(--secondaryColor);
+  border-color: var(--secondaryColor) !important;
 }
 
-#banner .image-swiper-button-prev{
-    left: 50px;
+#banner .image-swiper-button-prev {
+  left: 50px;
 }
-#banner .image-swiper-button-next{
-    right: 50px;
+#banner .image-swiper-button-next {
+  right: 50px;
+}
+
+@media (max-width: 575px) {
+    #banner{
+        height: 550px;
+    }
+  #banner .image-swiper-button-prev,
+  #banner .image-swiper-button-next {
+    bottom: 20px;
+    top: auto;
+    transform: translateY(0);
+  }
+  #banner .image-swiper-button-prev {
+    left: calc(40% - 25px);
+  }
+  #banner .image-swiper-button-next {
+    right:  calc(40% - 25px);
+  }
+
+  #banner .bannerCnt{
+    padding: 0 30px;
+  }
+  #banner .bannerCnt h2{
+    font-size: 30px;
+  }
+  #banner .bannerCnt h3{
+    font-size: 45px;
+  }
 }
