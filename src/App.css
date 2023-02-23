@@ -4,7 +4,10 @@
   --secondaryColor: #fbaa33;
   --textColor: #666666;
   --mainFont: "Arimo", sans-serif;
+  --aboutShape-top: url("../public/images/aboutShape.webp");
+  --aboutShape-bottom: url("../public/images/aboutShape2.webp");
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -23,10 +26,23 @@ p {
   margin: 0;
   padding: 0;
 }
-ul,ol{
+ul,
+ol {
   list-style: none;
 }
 
 body {
   font-family: var(--mainFont);
+}
+
+/* *SWIPER SLIDER GLOABL STYLES */
+/* *pagination */
+span.swiper-pagination-bullet {
+  background-color: transparent;
+  border: 1px solid #000;
+}
+
+span.swiper-pagination-bullet-active {
+  background-color: var(--secondaryColor) !important;
+  border-color: transparent;
 }

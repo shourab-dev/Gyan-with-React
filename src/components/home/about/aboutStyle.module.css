@@ -1,0 +1,85 @@
+#about {
+  padding-bottom: 40px;
+}
+@media (max-width: 768px) {
+  #about {
+    padding: 50px 0;
+  }
+}
+
+.spaceFromTop {
+  margin-top: 60px;
+}
+
+.imageContainer {
+  position: relative;
+  z-index: 1;
+}
+.imageContainer::before,
+.imageContainer::after {
+  content: "";
+  position: absolute;
+  inset: 25px 30px;
+  transform: skewX(-15deg);
+  background-color: #ddd;
+  border-radius: 5px;
+}
+.imageContainer::after {
+  z-index: -3;
+  background-color: transparent;
+  border: 1px solid #ddd;
+  transform: skewX(-15deg) translateY(20px);
+  inset: 70px 15px;
+}
+
+.imageContainer::before {
+  z-index: -2;
+}
+
+.imageContainer img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.aboutImage {
+  position: relative;
+}
+
+.aboutImage::before,
+.aboutImage::after {
+  content: "";
+  width: 100%;
+  max-width: 371px;
+  height: 3px;
+  position: absolute;
+}
+
+.aboutImage::before {
+  background-image: var(--aboutShape-top);
+  top: -10px;
+}
+.aboutImage::after {
+  background-image: var(--aboutShape-bottom);
+  bottom: -10px;
+  left: 50%;
+}
+
+.mySwiper{
+  outline: 1px solid red;
+}
+
+
+
+@media (max-width: 991px){
+    .aboutImage::before,
+.aboutImage::after{
+    max-width: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+    .aboutImage::after {
+  background-image: var(--aboutShape-bottom);
+  bottom: -20px;
+  
+}
+}

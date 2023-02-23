@@ -1,0 +1,21 @@
+.heading {
+    margin: auto;
+    text-align: center;
+}
+@media (max-width: 768px){
+    .heading{
+        margin: 15px 0;
+    }
+}
+.heading  h2{
+    
+    color: var(--primaryColor);
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.heading p{
+    font-size: 14px;
+    color: #666;
+}

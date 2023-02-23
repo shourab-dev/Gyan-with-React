@@ -64,4 +64,22 @@ const supportContents = [
   },
 ];
 
-export { Banners, supportContents };
+const aboutContents = [
+  {
+    id: 1,
+    image: "/images/AboutSlider1.webp",
+    title: "About Slider",
+  },
+  {
+    id: 2,
+    image: "/images/AboutSlider1.webp",
+    title: "About Slider",
+  },
+  {
+    id: 3,
+    image: "/images/AboutSlider1.webp",
+    title: "About Slider",
+  },
+];
+
+export { Banners, supportContents, aboutContents };

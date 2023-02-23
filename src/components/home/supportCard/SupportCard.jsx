@@ -19,7 +19,7 @@ export default function SupportCard() {
         <Row className="justify-content-md-center">
           {supportCards.map((supportCard, index) => {
             return (
-              <Col
+              <Col key={supportCard.id}
                 md={supportCards.length - 1 == index ? 12 : 6}
                 lg={3}
                 className="text-center supportCard"
